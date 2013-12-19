@@ -84,6 +84,7 @@ TEST(stdio, getdelim) {
 
 TEST(stdio, getdelim_invalid) {
   FILE* fp = tmpfile();
+  ASSERT_TRUE(fp != NULL);
 
   char* buffer = NULL;
   size_t buffer_length = 0;
@@ -149,6 +150,7 @@ TEST(stdio, getline) {
 
 TEST(stdio, getline_invalid) {
   FILE* fp = tmpfile();
+  ASSERT_TRUE(fp != NULL);
 
   char* buffer = NULL;
   size_t buffer_length = 0;

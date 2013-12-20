@@ -3,6 +3,7 @@ _LIBC_ARCH_COMMON_SRC_FILES := \
     arch-arm/bionic/atomics_arm.c \
     arch-arm/bionic/clone.S \
     arch-arm/bionic/eabi.c \
+    arch-arm/bionic/eabi_asm.S \
     arch-arm/bionic/_exit_with_stack_teardown.S \
     arch-arm/bionic/ffs.S \
     arch-arm/bionic/futex_arm.S \

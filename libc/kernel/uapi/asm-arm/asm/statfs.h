@@ -16,14 +16,9 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
-/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
-#endif
-#endif
+#ifndef _ASMARM_STATFS_H
+#define _ASMARM_STATFS_H
+#define ARCH_PACK_STATFS64 __attribute__((packed,aligned(4)))
+#include <asm-generic/statfs.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #endif

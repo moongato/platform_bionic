@@ -16,14 +16,5 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
-/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
-#endif
-#endif
-/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#endif
+#include <asm-generic/mman.h>
+#define arch_mmap_check(addr, len, flags)   (((flags) & MAP_FIXED && (addr) < FIRST_USER_ADDRESS) ? -EINVAL : 0)

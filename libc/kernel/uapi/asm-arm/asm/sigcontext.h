@@ -16,14 +16,35 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
+#ifndef _ASMARM_SIGCONTEXT_H
+#define _ASMARM_SIGCONTEXT_H
+struct sigcontext {
+ unsigned long trap_no;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
-#endif
-#endif
+ unsigned long error_code;
+ unsigned long oldmask;
+ unsigned long arm_r0;
+ unsigned long arm_r1;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long arm_r2;
+ unsigned long arm_r3;
+ unsigned long arm_r4;
+ unsigned long arm_r5;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long arm_r6;
+ unsigned long arm_r7;
+ unsigned long arm_r8;
+ unsigned long arm_r9;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long arm_r10;
+ unsigned long arm_fp;
+ unsigned long arm_ip;
+ unsigned long arm_sp;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ unsigned long arm_lr;
+ unsigned long arm_pc;
+ unsigned long arm_cpsr;
+ unsigned long fault_address;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+};
 #endif

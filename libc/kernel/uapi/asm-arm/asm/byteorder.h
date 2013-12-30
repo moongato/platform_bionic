@@ -16,14 +16,13 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
+#ifndef __ASM_ARM_BYTEORDER_H
+#define __ASM_ARM_BYTEORDER_H
+#ifdef __ARMEB__
+#include <linux/byteorder/big_endian.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
+#else
+#include <linux/byteorder/little_endian.h>
 #endif
 #endif
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#endif

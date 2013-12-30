@@ -16,14 +16,19 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
+#ifndef __ARCH_ARM_POSIX_TYPES_H
+#define __ARCH_ARM_POSIX_TYPES_H
+typedef unsigned short __kernel_mode_t;
+#define __kernel_mode_t __kernel_mode_t
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
-#endif
-#endif
+typedef unsigned short __kernel_ipc_pid_t;
+#define __kernel_ipc_pid_t __kernel_ipc_pid_t
+typedef unsigned short __kernel_uid_t;
+typedef unsigned short __kernel_gid_t;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+#define __kernel_uid_t __kernel_uid_t
+typedef unsigned short __kernel_old_dev_t;
+#define __kernel_old_dev_t __kernel_old_dev_t
+#include <asm-generic/posix_types.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #endif

@@ -16,14 +16,16 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
+#ifndef _UAPI__ASM_ARM_SWAB_H
+#define _UAPI__ASM_ARM_SWAB_H
+#include <linux/compiler.h>
+#include <linux/types.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
+#ifndef __STRICT_ANSI__
 #define __SWAB_64_THRU_32__
 #endif
-#endif
+#ifndef __thumb__
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+#endif
+#define __arch_swab32 __arch_swab32
 #endif

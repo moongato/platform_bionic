@@ -16,14 +16,13 @@
  ***
  ****************************************************************************
  ****************************************************************************/
-#ifndef _ASM_GENERIC_SWAB_H
-#define _ASM_GENERIC_SWAB_H
-#include <asm/bitsperlong.h>
-#if __BITS_PER_LONG == 32
+#ifndef _ARM_FCNTL_H
+#define _ARM_FCNTL_H
+#define O_DIRECTORY 040000
+#define O_NOFOLLOW 0100000
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
-#define __SWAB_64_THRU_32__
-#endif
+#define O_DIRECT 0200000
+#define O_LARGEFILE 0400000
+#include <asm-generic/fcntl.h>
 #endif
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-#endif

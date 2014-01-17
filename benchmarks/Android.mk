@@ -23,7 +23,7 @@ LOCAL_PATH := $(call my-dir)
 # -----------------------------------------------------------------------------
 
 benchmark_c_flags = \
-    -O2 \
+    -O3 \
     -Wall -Wextra \
     -Werror \
     -fno-builtin \

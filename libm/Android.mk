@@ -140,6 +140,7 @@ libm_common_src_files += \
     upstream-freebsd/lib/msun/src/s_lrintf.c \
     upstream-freebsd/lib/msun/src/s_lround.c \
     upstream-freebsd/lib/msun/src/s_lroundf.c \
+    upstream-freebsd/lib/msun/src/s_modf.c \
     upstream-freebsd/lib/msun/src/s_modff.c \
     upstream-freebsd/lib/msun/src/s_nan.c \
     upstream-freebsd/lib/msun/src/s_nearbyint.c \
@@ -259,7 +260,6 @@ libm_generic_src_files := \
     upstream-freebsd/lib/msun/src/e_sqrt.c \
     upstream-freebsd/lib/msun/src/e_sqrtf.c \
     upstream-freebsd/lib/msun/src/s_cos.c \
-    upstream-freebsd/lib/msun/src/s_modf.c \
     upstream-freebsd/lib/msun/src/s_sin.c
 
 libm_arm_neon_src_files := \
@@ -267,7 +267,6 @@ libm_arm_neon_src_files := \
     arm/e_sqrt.S \
     arm/e_sqrtf.S \
     arm/s_cos.S \
-    arm/s_modf.S \
     arm/s_sin.S
 
 ifeq ($(ARCH_ARM_HAVE_NEON),true)

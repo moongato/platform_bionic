@@ -1120,7 +1120,7 @@ LOCAL_STATIC_LIBRARIES_arm := libc++
 LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
 
 # Don't install on release build
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := eng debug
 
 $(eval $(call patch-up-arch-specific-flags,LOCAL_CFLAGS,libc_common_cflags))
 include $(BUILD_SHARED_LIBRARY)
@@ -1152,7 +1152,7 @@ LOCAL_SHARED_LIBRARIES := libc libdl
 LOCAL_SYSTEM_SHARED_LIBRARIES :=
 
 # Don't install on release build
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := eng debug
 
 $(eval $(call patch-up-arch-specific-flags,LOCAL_CFLAGS,libc_common_cflags))
 include $(BUILD_SHARED_LIBRARY)
